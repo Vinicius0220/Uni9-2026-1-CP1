@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+}
+
+.topo {
+    background: #222;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    align-items: center;
+}
+
+.topo a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.destaque {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px;
+    background: #ff914d;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.destaque img {
+    width: 300px;
+    border-radius: 20px;
+}
+
+.texto {
+    max-width: 400px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background: #222;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.servicos {
+    padding: 40px;
+    text-align: center;
+}
+
+.lista {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.item {
+    background: white;
+    border-radius: 12px;
+    width: 220px;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
