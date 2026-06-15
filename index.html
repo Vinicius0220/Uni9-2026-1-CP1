@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop Aumicão</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <section class="header-content">
+            <img src="https://img.freepik.com/vetores-gratis/pet-shop-relacionados_24908-57968.jpg" alt="Foto do PetShop">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section class="intro">
+            <h1>Bem-vindo ao PetShop Aumicão!</h1>
+            <p>Oferecemos uma variedade de serviços para cuidar do seu pet, incluindo:</p>
+        </section>
+
+        <section class="counter-section" aria-label="Contador interativo">
+            <h2>Contador interativo</h2>
+            <p>Use os botões para aumentar, diminuir ou resetar o contador.</p>
+            <div class="counter-card">
+                <button id="decrement" type="button" aria-label="Diminuir">-</button>
+                <span id="counter-value">0</span>
+                <button id="increment" type="button" aria-label="Aumentar">+</button>
+            </div>
+            <div class="counter-actions">
+                <button id="reset" type="button">Resetar</button>
+            </div>
+        </section>
+
+        <section class="cards" aria-label="Serviços do petshop">
+            <article class="card">
+                <img src="https://petcare.com.br/wp-content/uploads/2013/04/cortando-pelo-cao-1280x853.jpg">
+                <h2>Poda de pêlo</h2>
+            </article>
+            <article class="card">
+                <img src="https://ric.com.br/wp-content/uploads/uploads/2025/06/OCE0rIpL-banho-em-cachorro.webp" alt="Serviço de banho">
+                <h2>Banho</h2>
+            </article>
+            <article class="card card-destaque">
+                <img src="https://blog-static.petlove.com.br/wp-content/uploads/2020/12/Cachorro-consulta-Petlove.jpg?_gl=1*fwfpq9*_gcl_au*MTM1NTY2OTkzNC4xNzc2Mjk4ODc2*_ga*MTAyMTY2ODY0LjE3NzYyOTg4Nzc.*_ga_QX538BXKBE*czE3NzYyOTg4NzYkbzEkZzAkdDE3NzYyOTg4NzYkajYwJGwwJGgw" alt="Serviço de consultas">
+                <h2>Consultas</h2>
+            </article>
+            <article class="card">
+                <img src="https://digitalvet.com.br/wp-content/uploads/2019/11/quando-castrar.png" alt="Serviço de castração">
+                <h2>Castração</h2>
+            </article>
+
+
+        </section>
+    </main>
+    <footer>
+        <hr />
+        <p>Endereço: Rua Exemplo, 123 - Cidade, Estado</p>
+        <p>Telefone: (11) 1234-5678</p>
+    </footer>
+    <script>
+        const counterValue = document.getElementById('counter-value');
+        const decrementBtn = document.getElementById('decrement');
+        const incrementBtn = document.getElementById('increment');
+        const resetBtn = document.getElementById('reset');
+        let count = 0;
+
+        function updateDisplay() {
+            counterValue.textContent = count;
+        }
+
+        incrementBtn.addEventListener('click', () => {
+            count += 1;
+            updateDisplay();
+        });
+
+        decrementBtn.addEventListener('click', () => {
+            count -= 1;
+            updateDisplay();
+        });
+
+        resetBtn.addEventListener('click', () => {
+            count = 0;
+            updateDisplay();
+        });
+    </script>
+</body>
+</html>
